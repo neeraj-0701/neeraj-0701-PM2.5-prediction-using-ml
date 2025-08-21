@@ -1,0 +1,112 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: #333;
+}
+
+/* Container with Glassmorphism */
+.container {
+    max-width: 1000px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #1a6a82;
+}
+
+/* Responsive Grid Layout for Form */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 24px; /* space between input groups */
+    width: 100%;
+    text-align: left;
+}
+
+/* Each Input Group (label + input) */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Labels */
+label {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+}
+
+/* Input fields */
+input[type="text"], 
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect on inputs */
+input:focus {
+    border-color: #2193b0;
+    box-shadow: 0 0 10px rgba(33, 147, 176, 0.4);
+    outline: none;
+}
+
+/* Predict button */
+.button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(135deg, #2193b0, #1a6a82);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr); /* still 2 columns for tablets */
+    }
+}
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* stack inputs vertically on mobile */
+    }
+}
