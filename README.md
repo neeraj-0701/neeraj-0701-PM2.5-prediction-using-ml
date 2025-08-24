@@ -37,3 +37,19 @@ The application was built using the following technologies:
 - Interactive HTML templates to input data and view results instantly.  
 - Easily deployable on Heroku or any cloud platform.  
 - Provides insights for environmental monitoring and pollution mitigation strategies.  
+
+---
+
+## 6. Screenshots 📸
+
+### 🔹 Home Page
+![Home Page](static/screenshots/home_page1.png)
+
+
+### 🔹 Home Page
+![Home Page](static/screenshots/home_page2.png)
+
+
+### 🔹 Prediction Result
+![Prediction Result](static/screenshots/prediction_result.png)
+
