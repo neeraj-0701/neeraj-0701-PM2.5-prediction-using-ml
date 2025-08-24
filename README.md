@@ -42,12 +42,15 @@ The application was built using the following technologies:
 
 ## 6. Screenshots 📸
 
-### 🔹 Home Page
+### 🔹 Home Page 1
+![Home Page](static/screenshots/home_page1.png)
 
 
 
 ### 🔹 Home Page
+![Home Page](static/screenshots/home_page2.png)
 
 
 ### 🔹 Prediction Result
+![Prediction Result](static/screenshots/prediction_result.png)
 
