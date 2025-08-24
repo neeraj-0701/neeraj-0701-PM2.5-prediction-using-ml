@@ -43,11 +43,11 @@ The application was built using the following technologies:
 ## 6. Screenshots 📸
 
 ### 🔹 Home Page
-![Home Page](static/screenshots/home_page1.png)
+![Home Page](https://github.com/neeraj-0701/neeraj-0701-PM2.5-prediction-using-ml/blob/main/Snapshot%20of%20Homapage(1).png)
 
 
 ### 🔹 Home Page
-![Home Page](static/screenshots/home_page2.png)
+![Home Page](https://github.com/neeraj-0701/neeraj-0701-PM2.5-prediction-using-ml/blob/main/Snapshot%20of%20Homapage(2).png)
 
 
 ### 🔹 Prediction Result
