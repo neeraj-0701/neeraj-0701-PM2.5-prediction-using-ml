@@ -1,8 +1,9 @@
-<<<<<<< HEAD
+
 # AIR QUALITY PM2.5 PREDICTION MODEL USING MACHINE LEARNING AND FLASK WEB APP
 ## 1. Project Title / Headline
 🌫️ **Air Quality PM2.5 Prediction Web App**  
 A Flask-based, interactive web application that predicts PM2.5 levels in the environment using machine learning, helping users monitor air pollution trends in real-time.
+🌐 **Live App:** [Air Quality PM2.5 Prediction](https://neeraj-0701-pm2-5-prediction-using-ml.onrender.com)
 
 ---
 
@@ -41,7 +42,32 @@ The application was built using the following technologies:
 
 ---
 
-## 6. Screenshots 📸
+## 6. Model Details
+
+Model type: [XGBoost]
+
+Input features: PM10, NO2, SO2, CO, temperature, humidity, wind speed, etc.
+
+Target: PM2.5 concentration
+
+Trained on: Air_Quality_Data.csv
+
+Saved model: pm2.5_model.pkl
+
+## 7. Deployment
+
+The app is deployed on Render and accessible online.
+
+Deployment uses the Procfile and all dependencies listed in requirements.txt.
+
+Users can access the app via the live link below.
+
+## 8.Live Demo
+
+🌐 **Live App:** [Air Quality PM2.5 Prediction](https://neeraj-0701-pm2-5-prediction-using-ml.onrender.com)
+
+
+## 9. Screenshots 📸
 
 ### 🔹 Home Page Part-1
 ![Home Page](https://github.com/neeraj-0701/neeraj-0701-PM2.5-prediction-using-ml/blob/main/Snapshot%20Of%20Home%20Page1.png)
@@ -55,11 +81,3 @@ The application was built using the following technologies:
 ### 🔹 Prediction Result
 ![Prediction Result](https://github.com/neeraj-0701/neeraj-0701-PM2.5-prediction-using-ml/blob/main/Snapshot%20of%20Prediction%20Result.png)
 
-=======
-# neeraj-0701-PM2.5-prediction-using-ml
-mlproject\Scripts\activate
-pip install flask scikit-learn numpy pandas matplotlib
-git add README.md pm2.5_model.pkl "PM2.5 PREDICTION.ipynb"
-git commit -m "Added README, notebook, model file, and requirements"
-git push origin main
->>>>>>> 57a88c4 (Save all local changes before pull)
