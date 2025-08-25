@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AIR QUALITY PM2.5 PREDICTION MODEL USING MACHINE LEARNING AND FLASK WEB APP
 ## 1. Project Title / Headline
 🌫️ **Air Quality PM2.5 Prediction Web App**  
@@ -54,3 +55,11 @@ The application was built using the following technologies:
 ### 🔹 Prediction Result
 ![Prediction Result](https://github.com/neeraj-0701/neeraj-0701-PM2.5-prediction-using-ml/blob/main/Snapshot%20of%20Prediction%20Result.png)
 
+=======
+# neeraj-0701-PM2.5-prediction-using-ml
+mlproject\Scripts\activate
+pip install flask scikit-learn numpy pandas matplotlib
+git add README.md pm2.5_model.pkl "PM2.5 PREDICTION.ipynb"
+git commit -m "Added README, notebook, model file, and requirements"
+git push origin main
+>>>>>>> 57a88c4 (Save all local changes before pull)

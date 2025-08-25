@@ -205,3 +205,23 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# Ignore virtual environments
+mlproj/
+mlproj1/
+mlproject/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+git add "PM2.5 PREDICTION.ipynb" pm2.5_model.pkl  README.md
+
+git rm -r --cached mlproj mlproj1 mlproject
+git add "PM2.5 PREDICTION.ipynb" pm2.5_model.pkl  README.md
+git commit -m "Removed venv folders, added notebook, model, requirements, and README"
+git push origin main
+git add  README.md
