@@ -1,5 +1,6 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,73 +10,82 @@
 
 <body>
     <div class="container">
-        <h1>🌬️ PM2.5 Air Quality Prediction</h1>
+        <div class="header">
+            <h1>🌬 PM2.5 Air Quality Prediction</h1>
+            <button type="button" class="fill-button" onclick="fillTestDetails()">Fill Test Details</button>
+        </div>
+
         <form action="/predict" method="post">
             <div class="form-grid">
                 <div class="input-group">
-                    <label for="BP">Barometric Pressure (BP)</label>
+                    <label for="BP">Barometric Pressure <span class="unit">(hPa)</span></label>
                     <input type="text" id="BP" name="BP" placeholder="e.g., 1013.25" required>
                 </div>
                 <div class="input-group">
-                    <label for="RH">Relative Humidity (RH)</label>
+                    <label for="RH">Relative Humidity <span class="unit">(%)</span></label>
                     <input type="text" id="RH" name="RH" placeholder="e.g., 55.5" required>
                 </div>
                 <div class="input-group">
-                    <label for="WD">Wind Direction (WD)</label>
+                    <label for="WD">Wind Direction <span class="unit">(°)</span></label>
                     <input type="text" id="WD" name="WD" placeholder="e.g., 180" required>
                 </div>
                 <div class="input-group">
-                    <label for="WS">Wind Speed (WS)</label>
+                    <label for="WS">Wind Speed <span class="unit">(m/s)</span></label>
                     <input type="text" id="WS" name="WS" placeholder="e.g., 5.2" required>
                 </div>
                 <div class="input-group">
-                    <label for="CO">Carbon Monoxide (CO)</label>
+                    <label for="CO">Carbon Monoxide <span class="unit">(ppm)</span></label>
                     <input type="text" id="CO" name="CO" placeholder="e.g., 0.8" required>
                 </div>
                 <div class="input-group">
-                    <label for="NO2">Nitrogen Dioxide (NO2)</label>
+                    <label for="NO2">Nitrogen Dioxide <span class="unit">(µg/m³)</span></label>
                     <input type="text" id="NO2" name="NO2" placeholder="e.g., 40.1" required>
                 </div>
                 <div class="input-group">
-                    <label for="Ozone">Ozone (O3)</label>
+                    <label for="Ozone">Ozone <span class="unit">(µg/m³)</span></label>
                     <input type="text" id="Ozone" name="Ozone" placeholder="e.g., 60.3" required>
                 </div>
                 <div class="input-group">
-                    <label for="SO2">Sulfur Dioxide (SO2)</label>
+                    <label for="SO2">Sulfur Dioxide <span class="unit">(µg/m³)</span></label>
                     <input type="text" id="SO2" name="SO2" placeholder="e.g., 5.7" required>
                 </div>
                 <div class="input-group">
-                    <label for="TEMPARATURE">Temperature (°C)</label>
+                    <label for="TEMPARATURE">Temperature <span class="unit">(°C)</span></label>
                     <input type="text" id="TEMPARATURE" name="TEMPARATURE" placeholder="e.g., 25.5" required>
                 </div>
-                <div class="input-group">
-                    <label for="from_year">From Year</label>
-                    <input type="text" id="from_year" name="from_year" placeholder="e.g., 2024" required>
+                <div class="input-group" onclick="document.getElementById('from_date').showPicker()">
+                    <label for="from_date">From Date</label>
+                    <input type="date" id="from_date" name="from_date" required>
                 </div>
-                <div class="input-group">
-                    <label for="from_month">From Month</label>
-                    <input type="text" id="from_month" name="from_month" placeholder="e.g., 8" required>
+
+                <div class="input-group" onclick="document.getElementById('to_date').showPicker()">
+                    <label for="to_date">To Date</label>
+                    <input type="date" id="to_date" name="to_date" required>
                 </div>
-                <div class="input-group">
-                    <label for="from_day">From Day</label>
-                    <input type="text" id="from_day" name="from_day" placeholder="e.g., 19" required>
-                </div>
-                <div class="input-group">
-                    <label for="to_year">To Year</label>
-                    <input type="text" id="to_year" name="to_year" placeholder="e.g., 2024" required>
-                </div>
-                <div class="input-group">
-                    <label for="to_month">To Month</label>
-                    <input type="text" id="to_month" name="to_month" placeholder="e.g., 8" required>
-                </div>
-                <div class="input-group">
-                    <label for="to_day">To Day</label>
-                    <input type="text" id="to_day" name="to_day" placeholder="e.g., 25" required>
-                </div>
+
             </div>
-            
+
             <button type="submit" class="button">🚀 Predict</button>
         </form>
+
+
     </div>
+
+    <script>
+        function fillTestDetails() {
+            document.getElementById("BP").value = "1013.25";
+            document.getElementById("RH").value = "55.5";
+            document.getElementById("WD").value = "180";
+            document.getElementById("WS").value = "5.2";
+            document.getElementById("CO").value = "0.8";
+            document.getElementById("NO2").value = "40.1";
+            document.getElementById("Ozone").value = "60.3";
+            document.getElementById("SO2").value = "5.7";
+            document.getElementById("TEMPARATURE").value = "25.5";
+            document.getElementById("from_date").value = "2024-08-19";
+            document.getElementById("to_date").value = "2024-08-19";
+        }
+    </script>
 </body>
+
 </html>
