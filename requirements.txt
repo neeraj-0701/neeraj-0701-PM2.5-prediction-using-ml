@@ -4,3 +4,4 @@ pandas
 numpy
 matplotlib
 gunicorn==23.0.0
+xgboost==2.0.3
